@@ -13,5 +13,3 @@
 # Ignore the build directory
 /build
 
-# Ignore Components directory. The contents will be fetched by bower.
-/components

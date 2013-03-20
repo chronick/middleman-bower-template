@@ -1,0 +1,9 @@
+{
+  "name": "universal-ie6-css",
+  "version": "0.0.0",
+  "commit": "2545c87e8b4096cd1186226000d08bccb9eda019",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/malarkey/universal-ie6-css.git"
+  }
+}
