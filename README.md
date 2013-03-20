@@ -23,7 +23,9 @@ This bad boy is distributed under the MIT license.
 ##Installation
 1. Download/clone to: `~/.middleman/html5bower`
 2. Create your new Middleman project: `middleman init my_new_project --template=html5bower`
-3. `bower install` to install the assets into a `components/` directory.
+3. `bower update` to update the assets in the `components/` directory to their latest versions.
+
+I wish we didn't have to include the `components/` directory since bower can just fetch all the data from the repos, but unfortunately `middleman init` does not work with creating symlinks that point to files that don't exist yet. Oh well.
 
 *Note: You can name the template whatever you like, so long as you call the same name in the `middleman init` command*
 
