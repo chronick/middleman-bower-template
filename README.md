@@ -1,23 +1,23 @@
 #Headcanon's HTML5 Middleman + Bower template
-This is a (somewhat opinionated) [Middleman](middlemanapp.com) template I made to help speed up static site building. It encourages asset management with [Bower](github.com/twitter/bower) and includes a default package.json. This template also makes it easy to add [Typekit](typekit.com) and [Google Analytics](google.com/analytics) to your site. 
+This is a (somewhat opinionated) [Middleman](http://middlemanapp.com) template I made to help speed up static site building. It encourages asset management with [Bower](http://github.com/twitter/bower) and includes a default package.json. This template also makes it easy to add [Typekit](http://typekit.com) and [Google Analytics](http://google.com/analytics) to your site. 
 
-a lot of credit goes to [Danny Prose's Middleman HTML5BP-HAML] template, as well as the general [HTML5 Boilerplate](html5boilerplate.com) for helping me make this template.
+a lot of credit goes to [Danny Prose's Middleman HTML5BP-HAML] template, as well as the general [HTML5 Boilerplate](http://html5boilerplate.com) for helping me make this template.
 
 This bad boy is distributed under the MIT license.
 
 
 ##Features:
-* [Markdown](daringfireball.net/projects/markdown/) rendering
-* [SCSS](sass-lang.com)
-* [Coffeescript](coffeescript.org)
-* a [Favicon Maker](github.com/follmann/middleman-favicon-maker)
-* Middleman [Live Reload](github.com/middleman/middleman-livereload)
-* [Modernizr](modernizr.com)
-* [Normalize.css](necolas.github.com/normalize.css) 
-* [Universal IE6 CSS](github.com/malarkey/universal-ie6-css) for, well, IE6
-* [Bower](github.com/twitter/bower) package management
+* [Markdown](http://daringfireball.net/projects/markdown/) rendering
+* [SCSS](http://sass-lang.com)
+* [Coffeescript](http://coffeescript.org)
+* a [Favicon Maker](http://github.com/follmann/middleman-favicon-maker)
+* Middleman [Live Reload](http://github.com/middleman/middleman-livereload)
+* [Modernizr](http://modernizr.com)
+* [Normalize.css](http://necolas.github.com/normalize.css) 
+* [Universal IE6 CSS](http://github.com/malarkey/universal-ie6-css) for, well, IE6
+* [Bower](http://github.com/twitter/bower) package management
 * A Gemfile.ru for easy Heroku deployment
-* A [middleman-deploy](github.com/tvaughan/middleman-deploy) config snippet to ease FTP deployment
+* A [middleman-deploy](http://github.com/tvaughan/middleman-deploy) config snippet to ease FTP deployment
 
 
 ##Installation
@@ -29,11 +29,11 @@ This bad boy is distributed under the MIT license.
 
 
 ##Adding a package with bower
-*This section just deals with adding bower packages to your middleman app.  The full bower documentation can be found [here](github.com/twitter/bower).*
+*This section just deals with adding bower packages to your middleman app.  The full bower documentation can be found [here](http://github.com/twitter/bower).*
 
 I have included a few bower packages already in the component.json file, namely jquery, normalize, and modernizr, and have left the default components directory in the template's root. I did this because otherwise Middleman's build phase would copy *Everything* from each bower package into the build/ directory.
 
-Also, middleman doesn't seem to support adding multiple asset paths at this time, so this is the easiest solution I could find for asset management without changing the source for [middleman-sprockets](github.com/middleman/middleman-sprockets).
+Also, middleman doesn't seem to support adding multiple asset paths at this time, so this is the easiest solution I could find for asset management without changing the source for [middleman-sprockets](http://github.com/middleman/middleman-sprockets).
 
 In order to add a package, simply install the package with bower and symlink the files you want to use to the `source/assets/{css,js,img}/vendor` directory.
 
