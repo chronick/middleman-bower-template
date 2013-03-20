@@ -1,7 +1,7 @@
 #Headcanon's HTML5 Middleman + Bower template
 This is a (somewhat opinionated) [Middleman](http://middlemanapp.com) template I made to help speed up static site building. It encourages asset management with [Bower](http://github.com/twitter/bower) and includes a default package.json. This template also makes it easy to add [Typekit](http://typekit.com) and [Google Analytics](http://google.com/analytics) to your site. 
 
-a lot of credit goes to [Danny Prose's Middleman HTML5BP-HAML] template, as well as the general [HTML5 Boilerplate](http://html5boilerplate.com) for helping me make this template.
+a lot of credit goes to [Danny Prose's Middleman HTML5BP-HAML](https://github.com/dannyprose/Middleman-HTML5BP-HAML) template, as well as the general [HTML5 Boilerplate](http://html5boilerplate.com) for helping me make this template.
 
 This bad boy is distributed under the MIT license.
 
