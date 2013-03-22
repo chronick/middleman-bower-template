@@ -109,6 +109,12 @@ configure :build do
   # Enable cache buster
   # activate :cache_buster
 
+  # alternative to cache buster
+  # activate :asset_hash
+
+  # compress all the things
+  # activate :gzip
+
   # Use relative URLs
   # activate :relative_assets
 
