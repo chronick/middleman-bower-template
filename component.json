@@ -5,6 +5,8 @@
     "jquery": "~1.9.1",
     "normalize-scss": "~2.1.0",
     "modernizr": "~2.6.2",
-    "universal-ie6-css": "git://github.com/malarkey/universal-ie6-css.git"
+    "universal-ie6-css": "git://github.com/malarkey/universal-ie6-css.git",
+    "bootstrap-sass": "~2.3.1",
+    "font-awesome": "~3.0.2"
   }
 }
