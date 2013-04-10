@@ -3,6 +3,89 @@
   It generally keeps the main css page clean.
 */
 
-@import "vendor/normalize";
+//bootstrap
+@import "settings"; // Modify this for custom colors, font-sizes, etc
+@import "vendor/bootstrap/mixins";
 
-// @import "compass";
+// CSS Reset
+@import "vendor/bootstrap/reset";
+
+// Grid system and page structure
+@import "vendor/bootstrap/scaffolding";
+@import "vendor/bootstrap/grid";
+@import "vendor/bootstrap/layouts";
+
+// Base CSS
+@import "vendor/bootstrap/type";
+@import "vendor/bootstrap/code";
+@import "vendor/bootstrap/forms";
+@import "vendor/bootstrap/tables";
+
+// Components: common
+@import "vendor/bootstrap/sprites";
+@import "vendor/bootstrap/dropdowns";
+@import "vendor/bootstrap/wells";
+@import "vendor/bootstrap/component-animations";
+@import "vendor/bootstrap/close";
+
+// Components: Buttons & Alerts
+@import "vendor/bootstrap/buttons";
+@import "vendor/bootstrap/button-groups";
+@import "vendor/bootstrap/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
+
+// Components: Nav
+@import "vendor/bootstrap/navs";
+@import "vendor/bootstrap/navbar";
+@import "vendor/bootstrap/breadcrumbs";
+@import "vendor/bootstrap/pagination";
+@import "vendor/bootstrap/pager";
+
+// Components: Popovers
+@import "vendor/bootstrap/modals";
+@import "vendor/bootstrap/tooltip";
+@import "vendor/bootstrap/popovers";
+
+// Components: Misc
+@import "vendor/bootstrap/thumbnails";
+@import "vendor/bootstrap/media";
+@import "vendor/bootstrap/labels-badges";
+@import "vendor/bootstrap/progress-bars";
+@import "vendor/bootstrap/accordion";
+@import "vendor/bootstrap/carousel";
+@import "vendor/bootstrap/hero-unit";
+
+// Utility classes
+@import "vendor/bootstrap/utilities"; // Has to be last to override when necessary
+
+// RESPONSIVE CLASSES
+// ------------------
+
+@import "vendor/bootstrap/responsive-utilities";
+
+
+// MEDIA QUERIES
+// ------------------
+
+// Large desktops
+@import "vendor/bootstrap/responsive-1200px-min";
+
+// Tablets to regular desktops
+@import "vendor/bootstrap/responsive-768px-979px";
+
+// Phones to portrait tablets and narrow desktops
+@import "vendor/bootstrap/responsive-767px-max";
+
+
+// RESPONSIVE NAVBAR
+// ------------------
+
+// From 979px and below, show a button to toggle navbar contents
+@import "vendor/bootstrap/responsive-navbar";
+
+
+
+// Font Awesome
+@import "vendor/font-awesome";
+
+// Compass
+@import "compass";
