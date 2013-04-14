@@ -7,3 +7,5 @@ gem "middleman-livereload"
 gem "middleman-deploy"
 
 gem "redcarpet"
+
+gem "zurb-foundation", ">=4.0.0"

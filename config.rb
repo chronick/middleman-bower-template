@@ -4,6 +4,8 @@ set :markdown_engine, :redcarpet
 #Livereload
 activate :livereload
 
+require "zurb-foundation"
+
 ###
 # Compass
 ###

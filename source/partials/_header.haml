@@ -1,2 +1,9 @@
 %header
-  ="Its the Header!"
+  %nav.top-bar
+    .contain-to-grid.sticky
+      %ul.title-area
+        %li.name
+          %h1=link_to "Title", '#'
+        %li.toggle-topbar.menu-icon
+          =link_to '#' do
+            %span="Menu"
