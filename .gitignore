@@ -13,3 +13,5 @@
 # Ignore the build directory
 /build
 
+# Ignore components directory. Will need to change this if you change bower's install path
+/components

@@ -10,10 +10,6 @@ require "zurb-foundation"
 # Compass
 ###
 
-# Susy grids in Compass
-# First: gem install susy
-# require 'susy'
-
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -41,61 +37,20 @@ require "zurb-foundation"
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
-###
-# Helpers
-###
+# Site Settings
+@analytics_account = "asdfsfsd"
+@typekit_account = "hdsfadsf"
 
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
-helpers do
-
-  def analytics_account
-    false
-  end
-
-  def typekit_account
-    false
-  end
-
-  def page_title
-    title = "Middleman" #Set site title here
-
-    if data.page.title
-      title << " | " + data.page.title
-    end
-
-    title
-  end
-  
-  def page_description
-    description = "A Static Site Generator" # Set site description here
-
-    if data.page.description
-      description = data.page.description
-    end
-
-    description
-  end
-
-  def page_keywords
-    keywords = [] # Set site keywords here
-
-    if data.page.keywords
-      keywords.concat(dat.page.keywords)
-    end
-
-    keywords.uniq.join(", ")
-  end
-
-end
-
+# Asset Settings
 set :css_dir, 'assets/css'
-
 set :js_dir, 'assets/js'
-
 set :images_dir, 'assets/img'
+
+# Add bower's directory to sprockets asset path
+after_configuration do
+  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+end
 
 # Build-specific configuration
 configure :build do
@@ -128,7 +83,6 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
-
 
 # ftp deployment configuration. 
 # activate :deploy do |deploy|

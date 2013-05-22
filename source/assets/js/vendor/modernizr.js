@@ -1,1 +1,1 @@
-../../../../components/modernizr/modernizr.js
+//= include modernizr/modernizr
