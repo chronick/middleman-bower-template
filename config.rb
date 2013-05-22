@@ -8,10 +8,6 @@ activate :livereload
 # Compass
 ###
 
-# Susy grids in Compass
-# First: gem install susy
-# require 'susy'
-
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -47,15 +43,11 @@ activate :livereload
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
+
+@analytics_account = "asdfsfsd"
+@typekit_account = "hdsfadsf"
+
 helpers do
-
-  def analytics_account
-    false
-  end
-
-  def typekit_account
-    false
-  end
 
   def page_title
     title = "Middleman" #Set site title here
