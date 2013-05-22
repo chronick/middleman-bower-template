@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7] <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8] <html class="no-js lt-ie9"><![endif]-->
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="<%= page_description %>">
+    <meta name="keywords" content="<%= page_keywords %>">
+
+    <title><%= page_title %></title>
+
+    <!--[if lte IE 6]>
+      <%= stylesheet_link_tag "vendor/universal-ie6" %>
+    <![endif]-->
+
+    <!--[if ! lte IE 6]><!-->
+      <%= stylesheet_link_tag "all" %>
+    <!--<![endif]-->
+
+    <%= javascript_include_tag "vendor/modernizr" %>
+
+    <%= partial "partials/typekit" %>
+    <%= partial "partials/analytics" %>
+
+    <%= yield_content :head %>
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+      <%= partial "partials/compatibility-notice" %>
+    <![endif]-->
+
+    <%= partial "partials/header" %>
+
+    <%= yield %>
+
+    <%= partial "partials/footer" %>
+
+    <%= javascript_include_tag "app" %>
+  </body>
+</html>

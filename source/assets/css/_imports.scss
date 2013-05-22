@@ -5,87 +5,85 @@
 
 //bootstrap
 @import "settings"; // Modify this for custom colors, font-sizes, etc
-@import "vendor/bootstrap/mixins";
+@import "bootstrap-sass/lib/mixins";
 
 // CSS Reset
-@import "vendor/bootstrap/reset";
+@import "bootstrap-sass/lib/reset";
 
 // Grid system and page structure
-@import "vendor/bootstrap/scaffolding";
-@import "vendor/bootstrap/grid";
-@import "vendor/bootstrap/layouts";
+@import "bootstrap-sass/lib/scaffolding";
+@import "bootstrap-sass/lib/grid";
+@import "bootstrap-sass/lib/layouts";
 
 // Base CSS
-@import "vendor/bootstrap/type";
-@import "vendor/bootstrap/code";
-@import "vendor/bootstrap/forms";
-@import "vendor/bootstrap/tables";
+@import "bootstrap-sass/lib/type";
+@import "bootstrap-sass/lib/code";
+@import "bootstrap-sass/lib/forms";
+@import "bootstrap-sass/lib/tables";
 
 // Components: common
-@import "vendor/bootstrap/sprites";
-@import "vendor/bootstrap/dropdowns";
-@import "vendor/bootstrap/wells";
-@import "vendor/bootstrap/component-animations";
-@import "vendor/bootstrap/close";
+@import "bootstrap-sass/lib/sprites";
+@import "bootstrap-sass/lib/dropdowns";
+@import "bootstrap-sass/lib/wells";
+@import "bootstrap-sass/lib/component-animations";
+@import "bootstrap-sass/lib/close";
 
 // Components: Buttons & Alerts
-@import "vendor/bootstrap/buttons";
-@import "vendor/bootstrap/button-groups";
-@import "vendor/bootstrap/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
+@import "bootstrap-sass/lib/buttons";
+@import "bootstrap-sass/lib/button-groups";
+@import "bootstrap-sass/lib/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
 
 // Components: Nav
-@import "vendor/bootstrap/navs";
-@import "vendor/bootstrap/navbar";
-@import "vendor/bootstrap/breadcrumbs";
-@import "vendor/bootstrap/pagination";
-@import "vendor/bootstrap/pager";
+@import "bootstrap-sass/lib/navs";
+@import "bootstrap-sass/lib/navbar";
+@import "bootstrap-sass/lib/breadcrumbs";
+@import "bootstrap-sass/lib/pagination";
+@import "bootstrap-sass/lib/pager";
 
 // Components: Popovers
-@import "vendor/bootstrap/modals";
-@import "vendor/bootstrap/tooltip";
-@import "vendor/bootstrap/popovers";
+@import "bootstrap-sass/lib/modals";
+@import "bootstrap-sass/lib/tooltip";
+@import "bootstrap-sass/lib/popovers";
 
 // Components: Misc
-@import "vendor/bootstrap/thumbnails";
-@import "vendor/bootstrap/media";
-@import "vendor/bootstrap/labels-badges";
-@import "vendor/bootstrap/progress-bars";
-@import "vendor/bootstrap/accordion";
-@import "vendor/bootstrap/carousel";
-@import "vendor/bootstrap/hero-unit";
+@import "bootstrap-sass/lib/thumbnails";
+@import "bootstrap-sass/lib/media";
+@import "bootstrap-sass/lib/labels-badges";
+@import "bootstrap-sass/lib/progress-bars";
+@import "bootstrap-sass/lib/accordion";
+@import "bootstrap-sass/lib/carousel";
+@import "bootstrap-sass/lib/hero-unit";
 
 // Utility classes
-@import "vendor/bootstrap/utilities"; // Has to be last to override when necessary
+@import "bootstrap-sass/lib/utilities"; // Has to be last to override when necessary
 
 // RESPONSIVE CLASSES
 // ------------------
 
-@import "vendor/bootstrap/responsive-utilities";
+@import "bootstrap-sass/lib/responsive-utilities";
 
 
 // MEDIA QUERIES
 // ------------------
 
 // Large desktops
-@import "vendor/bootstrap/responsive-1200px-min";
+@import "bootstrap-sass/lib/responsive-1200px-min";
 
 // Tablets to regular desktops
-@import "vendor/bootstrap/responsive-768px-979px";
+@import "bootstrap-sass/lib/responsive-768px-979px";
 
 // Phones to portrait tablets and narrow desktops
-@import "vendor/bootstrap/responsive-767px-max";
+@import "bootstrap-sass/lib/responsive-767px-max";
 
 
 // RESPONSIVE NAVBAR
 // ------------------
 
 // From 979px and below, show a button to toggle navbar contents
-@import "vendor/bootstrap/responsive-navbar";
-
-
+@import "bootstrap-sass/lib/responsive-navbar";
 
 // Font Awesome
-@import "vendor/font-awesome";
+@import "font-awesome/sass/font-awesome";
 
 // Compass
 @import "compass";

@@ -23,37 +23,19 @@ This bad boy is distributed under the MIT license.
 ##Installation
 1. Download/clone to: `~/.middleman/html5bower`
 2. Create your new Middleman project: `middleman init my_new_project --template=html5bower`
-3. `bower update` to update the assets in the `components/` directory to their latest versions.
+3. `bower install` to install the assets in the `components/` directory.
 
-I wish we didn't have to include the `components/` directory since bower can just fetch all the data from the repos, but unfortunately `middleman init` does not work with creating symlinks that point to files that don't exist yet. Oh well.
 
 *Note: You can name the template whatever you like, so long as you call the same name in the `middleman init` command*
 
 
 ##Adding a package with bower
-*This section just deals with adding bower packages to your middleman app.  The full bower documentation can be found [here](http://github.com/twitter/bower).*
+By default, all bower packages are put in the ```components/``` directory outside of the source. This is to prevent all of the extra files bower downloads being copied over to ```build/```.
+We used to have to symlink the files we wanted in the components directory over to our assets path in ```source/```, but no longer.
 
-I have included a few bower packages already in the component.json file, namely jquery, normalize, and modernizr, and have left the default components directory in the template's root. I did this because otherwise Middleman's build phase would copy *Everything* from each bower package into the build/ directory.
+Now when you want to install a package, simply ```bower install <somepackage>``` and include it like you would any other file in sprockets.
 
-Also, middleman doesn't seem to support adding multiple asset paths at this time, so this is the easiest solution I could find for asset management without changing the source for [middleman-sprockets](http://github.com/middleman/middleman-sprockets).
-
-In order to add a package, simply install the package with bower and symlink the files you want to use to the `source/assets/{css,js,img}/vendor` directory.
-
-###Example
-if I want to install jQuery, what I do is (from the project root):
-
-    bower install jquery
-    cd source/assets/js/vendor
-    ln -s ../../../../components/jquery/jquery.min.js jquery.js
-
-and include it wherever you like.
-
-This tripped me up for a bit so I thought I'd say this:
-If you wish to have a file concatenated into the main app.js or all.css, Sprockets requires you to prepend an underscore to the file, so it doesn't copy over the file *as well as* concatenate the contents.
-
-If you do this for javascript, make sure to add the underscore again when you require the file, like so:
-
-    //= require vendor/_jquery
+If you want to reference the asset directly in your HTML, then you will need to create a file in the asset path that includes the asset via sprockets. It's not ideal, but I think thats the best I can do right now.  An example of this is ```source/assets/js/vendor/modernizr.js``` and ```source/assets/css/vendor/universal-ie6.css```.
 
 
 ##On the SCSS organization
@@ -66,12 +48,12 @@ However, I have included a file organization that has worked for me so far:
 I'll likely be tweaking this a bunch as I go, however.
 
 
-##Included helpers
-I have included a few helpers to help out with orgainizing information on your site, as well as include typekit and google analytics easily. The helpers are found in config.rb.
+##Included helpers and other goodies
+I have included a few helpers to help out with organizing information on your site. They are located in ```helpers/```.
 
 To get typekit or analytics inclusion, simply add your account name/code to the appropriate places.
 
-Also remember to add the site name, keywords, and description in config.rb. If you want to include a page-specific one of these, they will be appended to the overall site's.
+Also remember to add the site name, keywords, and description in ```helpers/meta. If you want to include a page-specific one of these, they will be appended to the overall site's.
 
 
 ##Contribute

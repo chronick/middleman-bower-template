@@ -1,4 +1,4 @@
-#= require vendor/_jquery
+#= require jquery/jquery
 #= require vendor/_bootstrap
 
 (($) ->
