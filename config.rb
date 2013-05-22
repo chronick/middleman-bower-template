@@ -38,8 +38,8 @@ require "zurb-foundation"
 # end
 
 # Site Settings
-@analytics_account = "asdfsfsd"
-@typekit_account = "hdsfadsf"
+@analytics_account = false
+@typekit_account = false
 
 # Asset Settings
 set :css_dir, 'assets/css'
