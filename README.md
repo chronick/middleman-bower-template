@@ -31,29 +31,12 @@ I wish we didn't have to include the `components/` directory since bower can jus
 
 
 ##Adding a package with bower
-*This section just deals with adding bower packages to your middleman app.  The full bower documentation can be found [here](http://github.com/twitter/bower).*
+By default, all bower packages are put in the ```components/``` directory outside of the source. This is to prevent all of the extra files bower downloads being copied over to ```build/```.
+We used to have to symlink the files we wanted in the components directory over to our assets path in ```source/```, but no longer.
 
-I have included a few bower packages already in the component.json file, namely jquery, normalize, and modernizr, and have left the default components directory in the template's root. I did this because otherwise Middleman's build phase would copy *Everything* from each bower package into the build/ directory.
+Now when you want to install a package, simply ```bower install <somepackage>``` and include it like you would any other file in sprockets.
 
-Also, middleman doesn't seem to support adding multiple asset paths at this time, so this is the easiest solution I could find for asset management without changing the source for [middleman-sprockets](http://github.com/middleman/middleman-sprockets).
-
-In order to add a package, simply install the package with bower and symlink the files you want to use to the `source/assets/{css,js,img}/vendor` directory.
-
-###Example
-if I want to install jQuery, what I do is (from the project root):
-
-    bower install jquery
-    cd source/assets/js/vendor
-    ln -s ../../../../components/jquery/jquery.min.js jquery.js
-
-and include it wherever you like.
-
-This tripped me up for a bit so I thought I'd say this:
-If you wish to have a file concatenated into the main app.js or all.css, Sprockets requires you to prepend an underscore to the file, so it doesn't copy over the file *as well as* concatenate the contents.
-
-If you do this for javascript, make sure to add the underscore again when you require the file, like so:
-
-    //= require vendor/_jquery
+If you want to reference the asset directly in your HTML, then you will need to create a file in the asset path that includes the asset via sprockets. It's not ideal, but I think thats the best I can do right now.  An example of this is ```source/assets/js/vendor/modernizr.js``` and ```source/assets/css/vendor/universal-ie6.css```.
 
 
 ##On the SCSS organization
