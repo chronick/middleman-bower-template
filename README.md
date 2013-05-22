@@ -48,12 +48,12 @@ However, I have included a file organization that has worked for me so far:
 I'll likely be tweaking this a bunch as I go, however.
 
 
-##Included helpers
-I have included a few helpers to help out with orgainizing information on your site, as well as include typekit and google analytics easily. The helpers are found in config.rb.
+##Included helpers and other goodies
+I have included a few helpers to help out with organizing information on your site. They are located in ```helpers/```.
 
 To get typekit or analytics inclusion, simply add your account name/code to the appropriate places.
 
-Also remember to add the site name, keywords, and description in config.rb. If you want to include a page-specific one of these, they will be appended to the overall site's.
+Also remember to add the site name, keywords, and description in ```helpers/meta. If you want to include a page-specific one of these, they will be appended to the overall site's.
 
 
 ##Contribute
