@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "middleman", "~>3.0.14"
+gem "middleman", "~>3.1.4"
 
 gem "json", '~> 1.7.7'
 
