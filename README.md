@@ -14,7 +14,6 @@ This bad boy is distributed under the MIT license.
 * Middleman [Live Reload](http://github.com/middleman/middleman-livereload)
 * [Modernizr](http://modernizr.com)
 * [Normalize.css](http://necolas.github.com/normalize.css) 
-* [Universal IE6 CSS](http://github.com/malarkey/universal-ie6-css) for, well, IE6
 * [Bower](http://github.com/twitter/bower) package management
 * A Gemfile.ru for easy Heroku deployment
 * A [middleman-deploy](http://github.com/tvaughan/middleman-deploy) config snippet to ease FTP deployment
