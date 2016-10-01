@@ -22,7 +22,7 @@ def page_keywords
   keywords = [] # Set site keywords here
 
   if data.page.keywords
-    keywords.concat(dat.page.keywords)
+    keywords.concat(data.page.keywords)
   end
 
   keywords.uniq.join(", ")
